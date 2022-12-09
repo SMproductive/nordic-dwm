@@ -66,7 +66,7 @@ static const Layout layouts[] = {
 /* COMMANDS */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = {"dmenu_run", "-b", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { "st", "-e", "scroll" };
 static const char mute[] = "amixer set Master toggle";
 static const char louder[] = "amixer set Master 5%+";
 static const char quieter[] = "amixer set Master 5%-";
